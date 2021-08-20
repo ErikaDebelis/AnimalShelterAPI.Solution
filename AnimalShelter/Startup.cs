@@ -23,29 +23,49 @@ namespace AnimalShelter
     {
       Configuration = configuration;
     }
-
     public IConfiguration Configuration { get; }
 
     public void ConfigureServices(IServiceCollection services)
     {
+      services.AddCors(options =>
+      {
+        options.AddDefaultPolicy(
+              builder =>
+              {
+                builder.AllowAnyOrigin();
+                builder.AllowAnyHeader();
+                builder.AllowAnyMethod();
+              });
+      });
 
       services.AddControllers();
+      services.AddDbContext<AnimalShelterContext>(opt =>
+                opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
+      services.AddControllers();
       services.AddSwaggerGen(c =>
+        {
+          c.SwaggerDoc("v1", new OpenApiInfo { Title = "AnimalShelter", Version = "v1" });
+        });
+      services.AddApiVersioning(o =>
       {
-        c.SwaggerDoc("v1", new OpenApiInfo { Title = "animalshelter", Version = "v1" });
+        o.ReportApiVersions = true;
+        o.AssumeDefaultVersionWhenUnspecified = true;
+        o.DefaultApiVersion = new ApiVersion(1, 0);
       });
     }
+
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-        if (env.IsDevelopment())
-        {
-          app.UseDeveloperExceptionPage();
-          app.UseSwagger();
-          app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "animalshelter v1"));
-        }
+      if (env.IsDevelopment())
+      {
+        app.UseDeveloperExceptionPage();
+        app.UseSwagger();
+        app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AnimalShelter v1"));
+      }
 
       // app.UseHttpsRedirection();
       app.UseRouting();
+      app.UseCors();
       app.UseAuthorization();
       app.UseEndpoints(endpoints =>
       {
