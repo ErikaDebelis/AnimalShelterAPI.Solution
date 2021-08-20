@@ -4,6 +4,7 @@ An API that catalogs cats :cat:, dogs :dog:, and other small animals :rabbit: :h
 <p align="center">
   <img width="460" height="300" src="https://marketplace.animalsheltering.org/sites/default/files/styles/results/public/images/magazine/Success_DSC0210_322177_1s.jpg?itok=OYPPqX3c">
 </p>
+
 #### Authored by Erika Debelis
 
 ## Technologies Used
@@ -66,9 +67,9 @@ Be sure to remove the ``{YOUR_USERNAME_NAME}`` and ``{YOUR_PASSWORD}`` and fill 
 
 9. View the API by downloading Postman and entering http://localhost:5000/api/cats or http://localhost:5000/api/dogs as a GET!
 
-#### API Documentation
+## API Documentation
 
-##### API Endpoints
+### API Endpoints
 * HTTP Request URL: ``http://localhost:5000``
 * General request structure:
 ``` 
@@ -79,22 +80,22 @@ PUT /api/Cats/{id}
 DELETE /api/Cats/{id} 
 ```
 
-_substitute Cats with Dogs or SmallAnimals depending on the intended query results_
+###### _substitute Cats with Dogs or SmallAnimals depending on the intended query results_
 
-###### _examples of a request URL query string:_
+### _examples of a request URL query string:_
 * _``https://localhost:5001/api/Cats?name=Kimmy``_
 * _``https://localhost:5001/api/Dogs?name=Muffin``_
 * _``https://localhost:5001/api/SmallAnimals?name=Bacon``_
 
 
-##### Documentation utilized for further explorations:
-* [CORS](https://www.infoworld.com/article/3327562/how-to-enable-cors-in-aspnet-core.html)
-* [CORS](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-5.0)
-* [Pagination](https://www.c-sharpcorner.com/article/how-to-do-paging-with-asp-net-web-api/))
-* [Pagination](https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet)
-* [Creating unique constraints to avoid duplicate animals](https://stackoverflow.com/questions/41246614/entity-framework-core-add-unique-constraint-code-first/41257827)
-* [Swagger](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0&viewFallbackFrom=aspnetcore-50)
-* [Swagger utilizing Swashbuckle](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
+### Documentation utilized for further explorations:
+* [CORS source: infoworld](https://www.infoworld.com/article/3327562/how-to-enable-cors-in-aspnet-core.html)
+* [CORS source: microsoft docs](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-5.0)
+* [Pagination source: c-sharpcorner](https://www.c-sharpcorner.com/article/how-to-do-paging-with-asp-net-web-api/)
+* [Pagination source: jasonwatmore](https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet)
+* [Unique constraints to avoid duplicates source: stack overflow](https://stackoverflow.com/questions/41246614/entity-framework-core-add-unique-constraint-code-first/41257827)
+* [Swagger source: microsoft docs](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0&viewFallbackFrom=aspnetcore-50)
+* [Swagger utilizing Swashbuckle source: microsoft docs](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
 
 ## Bugs
 
@@ -102,7 +103,7 @@ _no known bugs at this time_
 
 ## License
 
-_MIT_
+_MIT_ & _AFL_
 
 _Copyright :copyright: 2021 Erika Debelis_
 
