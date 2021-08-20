@@ -1,6 +1,6 @@
-# Animal Shelter API
+# Animal Shelter API :tm:
 
-An API that catalogs cats, dogs and other small animals from the Animal Shelter's inventory. A user may View List, Add, Edit, and Delete animals as needed and interact with the  the API using Postman.
+An API that catalogs cats :cat:, dogs :dog:, and other small animals :rabbit: :hamster: :mouse: from the Animal Shelter's inventory. A user may View List, Add, Edit, and Delete animals as needed and interact with the  the API using Postman.
 #### Authored by Erika Debelis
 
 ## Technologies Used
@@ -61,11 +61,12 @@ Be sure to remove the ``{YOUR_USERNAME_NAME}`` and ``{YOUR_PASSWORD}`` and fill 
 8. Run "dotnet run" in the git BASH terminal to  minify the code, and run the project in the terminal.
     ``$ dotnet watch run``
 
-9. View the API by visiting Postman and entering localhost:5000/api/cats or localhost:5000/api/dogs!
+9. View the API by downloading Postman and entering localhost:5000/api/cats or localhost:5000/api/dogs as a GET!
 
-* _example of a request URL query string: ``https://localhost:5001/api/Cats?name=Kimmy``_
-* _example of a request URL query string: ``https://localhost:5001/api/Dogs?name=Muffin``_
-* _example of a request URL query string: ``https://localhost:5001/api/SmallAnimals?name=Bacon``_
+######_examples of a request URL query string:_ 
+* _``https://localhost:5001/api/Cats?name=Kimmy``_
+* _``https://localhost:5001/api/Dogs?name=Muffin``_
+* _``https://localhost:5001/api/SmallAnimals?name=Bacon``_
 
 ## Bugs
 
@@ -75,7 +76,7 @@ _no known bugs at this time_
 
 _MIT_
 
-_Copyright (c) 2021 Erika Debelis_
+_Copyright :copyright: 2021 Erika Debelis_
 
 if any issues are discovered while navigating the site, please let me know! It will help me learn and grow!
 
