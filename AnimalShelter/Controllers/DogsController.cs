@@ -64,5 +64,37 @@ namespace AnimalShelter.Controllers
 
       return CreatedAtAction(nameof(GetDog), new { id = thisDog.DogId }, thisDog);
     }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, Dog thisDog)
+    {
+      if (id != thisDog.DogId)
+      {
+        return BadRequest();
+      }
+
+      _db.Entry(thisDog).State = EntityState.Modified;
+
+      try
+      {
+        await _db.SaveChangesAsync();
+      }
+      catch (DbUpdateConcurrencyException)
+      {
+        if (!DogExists(id))
+        {
+          return NotFound();
+        }
+        else
+        {
+          throw;
+        }
+      }
+      return NoContent();
+    }
+    private bool DogExists(int id)
+    {
+      return _db.Dogs.Any(c => c.DogId == id);
+    }
   }
 }
