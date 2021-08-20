@@ -32,7 +32,7 @@ namespace AnimalShelter
         options.AddPolicy("AllowSpecificOrigin",
               builder =>
               {
-                builder.WithOrigins("http://localhost:5000", "https://localhost:50001");
+                builder.WithOrigins("http://localhost:5000", "https://localhost:5001");
                 builder.AllowAnyHeader();
                 builder.AllowAnyMethod();
               });
@@ -44,7 +44,23 @@ namespace AnimalShelter
       services.AddControllers();
       services.AddSwaggerGen(c =>
         {
-          c.SwaggerDoc("v1", new OpenApiInfo { Title = "AnimalShelter", Version = "v1" });
+          c.SwaggerDoc("v1", new OpenApiInfo 
+          {
+            Title = "AnimalShelter",
+            Version = "v1", 
+            Description = "A simple yet functional of an animal shelter ASP.NET Core Web API",
+            Contact = new OpenApiContact
+            {
+              Name = "Erika Debelis",
+              Email = "erika.debelis@gmail.com",
+              Url = new Uri("https://www.linkedin.com/in/erika-debelis/")
+            },
+            License = new OpenApiLicense
+            {
+              Name = "Use under AFL",
+              Url = new Uri("https://opensource.org/licenses/AFL-3.0"),
+            }
+          });
         });
       services.AddApiVersioning(o =>
       {
@@ -59,8 +75,14 @@ namespace AnimalShelter
       if (env.IsDevelopment())
       {
         app.UseDeveloperExceptionPage();
-        app.UseSwagger();
-        app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AnimalShelter v1"));
+        app.UseSwagger(c =>
+        {
+        c.SerializeAsV2 = true;
+        });
+        app.UseSwaggerUI(c => 
+        {
+          c.SwaggerEndpoint("/swagger/v1/swagger.json", "AnimalShelter v1");
+        });
       }
 
       // app.UseHttpsRedirection();

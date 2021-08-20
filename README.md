@@ -91,6 +91,7 @@ _substitute Cats with Dogs or SmallAnimals depending on the intended query resul
 * _``https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet``_ (pagination)
 * _``https://stackoverflow.com/questions/41246614/entity-framework-core-add-unique-constraint-code-first/41257827``_ (creating unique constraints to avoid duplicate animals)
 * _``https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0&viewFallbackFrom=aspnetcore-50``_ (Swagger)
+* _``https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio``_ (Swagger utilizing Swashbuckle)
 
 ## Bugs
 
