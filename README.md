@@ -63,12 +63,26 @@ Be sure to remove the ``{YOUR_USERNAME_NAME}`` and ``{YOUR_PASSWORD}`` and fill 
 
 9. View the API by downloading Postman and entering http://localhost:5000/api/cats or http://localhost:5000/api/dogs as a GET!
 
+#### API Documentation
+
+##### API Endpoints
+* HTTP Request URL: ``http://localhost:5000``
+* General request structure:
+```GET /api/Cats
+POST /api/Cats
+GET /api/Cats/{id}
+PUT /api/Cats/{id}
+DELETE /api/Cats/{id}```
+
+_substitute Cats with Dogs or SmallAnimals depending on the intended query results_
+
 ###### _examples of a request URL query string:_
 * _``https://localhost:5001/api/Cats?name=Kimmy``_
 * _``https://localhost:5001/api/Dogs?name=Muffin``_
 * _``https://localhost:5001/api/SmallAnimals?name=Bacon``_
 
-#### Documentation utilized for further explorations of CORS and Pagination:
+
+##### Documentation utilized for further explorations:
 * _``https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-5.0``_ (CORS)
 * _``https://www.c-sharpcorner.com/article/how-to-do-paging-with-asp-net-web-api/``_ (pagination)
 * _``https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet``_ (pagination)
