@@ -1,6 +1,6 @@
 # Animal Shelter API
 
-An API that catalogs cats and dogs from the Animal Shelter's inventory. A user may View List, Add, Edit, and Delete animals as needed and interact with the  the API using Postman.
+An API that catalogs cats, dogs and other small animals from the Animal Shelter's inventory. A user may View List, Add, Edit, and Delete animals as needed and interact with the  the API using Postman.
 #### Authored by Erika Debelis
 
 ## Technologies Used

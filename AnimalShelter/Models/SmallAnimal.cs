@@ -2,9 +2,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AnimalShelter.Models
 {
-  public class Dog
+  public class SmallAnimal
   {
-    public int DogId { get; set; }
+    public int SmallAnimalId { get; set; }
     [Required]
     public string Name { get; set; }
     public int Age { get; set; }

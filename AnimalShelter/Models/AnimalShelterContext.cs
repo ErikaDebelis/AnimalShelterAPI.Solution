@@ -23,12 +23,21 @@ namespace AnimalShelter.Models
           new Dog { DogId = 1, Name = "Cupcake", Description = "Lovely sweet baby- loves pets and licking the carpet lol.", Gender = "Female", Age = 8 },
           new Dog { DogId = 2, Name = "Muffin", Description = "Gentle pup with a lot of heart. Mr. loves Cupcake adn belly rubs.", Gender = "Male", Age = 10 },
           new Dog { DogId = 3, Name = "Cookie", Description = "Cookie is gentle and polite. Loves to love.", Gender = "Female", Age = 2 },
-          new Dog { DogId = 5, Name = "Emma", Description = "The sweetest lil shih Tzu you'll ever meet. gets so excited to see you she pees a little but you don't mind cause its so sweet.", Gender = "Female", Age = 12 },
-          new Dog { DogId = 4, Name = "Frankenfurter", Description = "Flamboyant lil boy with a tendency for drama. Very excitable fun pup.", Gender = "Male", Age = 7 }
+          new Dog { DogId = 4, Name = "Emma", Description = "The sweetest lil shih Tzu you'll ever meet. gets so excited to see you she pees a little but you don't mind cause its so sweet.", Gender = "Female", Age = 12 },
+          new Dog { DogId = 5, Name = "Frankenfurter", Description = "Flamboyant lil boy with a tendency for drama. Very excitable fun pup.", Gender = "Male", Age = 7 }
+        );
+        builder.Entity<SmallAnimal>()
+        .HasData(
+          new SmallAnimal { SmallAnimalId = 1, Name = "Bacon", Description = "Guinea Pig. Lovely sweet boy to humans- but doesnt play well with other hams. Loves to burrow.", Gender = "Male", Age = 1 },
+          new SmallAnimal { SmallAnimalId = 2, Name = "Cardi Bun", Description = "Bunny. loves play time and is very excitable.", Gender = "Female", Age = 3 },
+          new SmallAnimal { SmallAnimalId = 3, Name = "Hammond", Description = "Hamster. Loves to sleep and eat. a Lazy silly boy but is full of so much love.", Gender = "Male", Age = 1 },
+          new SmallAnimal { SmallAnimalId = 4, Name = "Sage", Description = "Chinchilla. Loves having lots of room to play and explore in! This baby is super fun and so so SOFT. ", Gender = "Female", Age = 4 },
+          new SmallAnimal { SmallAnimalId = 5, Name = "Goddric", Description = "Rat. Intelligent social boy with a sense of adventure.", Gender = "Male", Age = 1 }
         );
     }
 
     public DbSet<Cat> Cats { get; set; }
     public DbSet<Dog> Dogs { get; set; }
+    public DbSet<SmallAnimal> SmallAnimals { get; set; }
   }
 }
