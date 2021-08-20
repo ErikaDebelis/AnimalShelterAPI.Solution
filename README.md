@@ -1,6 +1,7 @@
 # Animal Shelter API :tm:
 
 An API that catalogs cats :cat:, dogs :dog:, and other small animals :rabbit: :hamster: :mouse: from the Animal Shelter's inventory. A user may View List, Add, Edit, and Delete animals as needed and interact with the  the API using Postman.
+![Puppy GuiltTrip](/screenshot.jpg "Sad puppy that needs a home")
 #### Authored by Erika Debelis
 
 ## Technologies Used
@@ -85,13 +86,13 @@ _substitute Cats with Dogs or SmallAnimals depending on the intended query resul
 
 
 ##### Documentation utilized for further explorations:
-* _``https://www.infoworld.com/article/3327562/how-to-enable-cors-in-aspnet-core.html``_ (CORS)
-* _``https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-5.0``_ (CORS)
-* _``https://www.c-sharpcorner.com/article/how-to-do-paging-with-asp-net-web-api/``_ (pagination)
-* _``https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet``_ (pagination)
-* _``https://stackoverflow.com/questions/41246614/entity-framework-core-add-unique-constraint-code-first/41257827``_ (creating unique constraints to avoid duplicate animals)
-* _``https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0&viewFallbackFrom=aspnetcore-50``_ (Swagger)
-* _``https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio``_ (Swagger utilizing Swashbuckle)
+* [CORS](https://www.infoworld.com/article/3327562/how-to-enable-cors-in-aspnet-core.html)
+* [CORS](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-5.0)
+* [Pagination](https://www.c-sharpcorner.com/article/how-to-do-paging-with-asp-net-web-api/))
+* [Pagination](https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet)
+* [Creating unique constraints to avoid duplicate animals](https://stackoverflow.com/questions/41246614/entity-framework-core-add-unique-constraint-code-first/41257827)
+* [Swagger](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0&viewFallbackFrom=aspnetcore-50)
+* [Swagger utilizing Swashbuckle](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
 
 ## Bugs
 
