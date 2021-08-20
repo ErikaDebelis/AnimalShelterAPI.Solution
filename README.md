@@ -1,7 +1,9 @@
 # Animal Shelter API :tm:
 
 An API that catalogs cats :cat:, dogs :dog:, and other small animals :rabbit: :hamster: :mouse: from the Animal Shelter's inventory. A user may View List, Add, Edit, and Delete animals as needed and interact with the  the API using Postman.
-![Puppy GuiltTrip](/screenshot.jpg "Sad puppy that needs a home")
+<p align="center">
+  <img width="460" height="300" src="https://marketplace.animalsheltering.org/sites/default/files/styles/results/public/images/magazine/Success_DSC0210_322177_1s.jpg?itok=OYPPqX3c">
+</p>
 #### Authored by Erika Debelis
 
 ## Technologies Used
