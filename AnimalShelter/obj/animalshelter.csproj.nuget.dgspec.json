@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalshelter\\AnimalShelter.csproj": {}
+    "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalShelter\\AnimalShelter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalshelter\\AnimalShelter.csproj": {
+    "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalShelter\\AnimalShelter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalshelter\\AnimalShelter.csproj",
+        "projectUniqueName": "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalShelter\\AnimalShelter.csproj",
         "projectName": "AnimalShelter",
-        "projectPath": "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalshelter\\AnimalShelter.csproj",
+        "projectPath": "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalShelter\\AnimalShelter.csproj",
         "packagesPath": "C:\\Users\\erika\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalshelter\\obj\\",
+        "outputPath": "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalShelter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erika\\AppData\\Roaming\\NuGet\\NuGet.Config"

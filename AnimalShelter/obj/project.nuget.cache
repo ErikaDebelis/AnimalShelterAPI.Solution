@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2dkJdsDm0vJsmyv139jyEuDJOa5kcFQE/Mm4f9LMX1SdJIHzVI+l94v1aOk1PrxbTsZ8WB7EkpQyjZnYwpMxAA==",
+  "dgSpecHash": "2u/FUaTe4+me88DT4Kwpg2UeIJv2m3rpr5uTuymohLrxTVF2iUZtuR5A1FwbtkCk5LBdO0eSwau9xs6r5HvIbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalshelter\\AnimalShelter.csproj",
+  "projectFilePath": "C:\\Users\\erika\\OneDrive\\Desktop\\AnimalShelterAPI.Solution\\animalShelter\\AnimalShelter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erika\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\erika\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.0\\microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",
