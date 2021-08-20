@@ -63,9 +63,9 @@ Be sure to remove the ``{YOUR_USERNAME_NAME}`` and ``{YOUR_PASSWORD}`` and fill 
 
 9. View the API by visiting Postman and entering localhost:5000/api/cats or localhost:5000/api/dogs!
 
-*_example of a request URL: ``https://localhost:5001/api/Cats?name=Kimmy``_*
-*_example of a request URL: ``https://localhost:5001/api/Dogs?name=Muffin``_*
-*_example of a request URL: ``https://localhost:5001/api/SmallAnimals?name=Bacon``_*
+* _example of a request URL query string: ``https://localhost:5001/api/Cats?name=Kimmy``_
+* _example of a request URL query string: ``https://localhost:5001/api/Dogs?name=Muffin``_
+* _example of a request URL query string: ``https://localhost:5001/api/SmallAnimals?name=Bacon``_
 
 ## Bugs
 

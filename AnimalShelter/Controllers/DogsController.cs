@@ -96,5 +96,20 @@ namespace AnimalShelter.Controllers
     {
       return _db.Dogs.Any(c => c.DogId == id);
     }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteDog(int id)
+    {
+      Dog thisDog = await _db.Dogs.FindAsync(id);
+      if (thisDog == null)
+      {
+        return NotFound();
+      }
+
+      _db.Dogs.Remove(thisDog);
+      await _db.SaveChangesAsync();
+
+      return NoContent();
+    }
   }
 }
