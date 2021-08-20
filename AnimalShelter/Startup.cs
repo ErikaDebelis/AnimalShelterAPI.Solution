@@ -25,26 +25,23 @@ namespace AnimalShelter
     }
     public IConfiguration Configuration { get; }
 
-    public class StartupEndPointBugTest
-    {
-    readonly string MyPolicy = "_myPolicy";
-
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddCors(options =>
       {
-        options.AddPolicy(name: MyPolicy,
-                builder =>
-                {
-                builder.WithOrigin("https://localhost:5001");
-                builder.WithMethods("PUT", "DELETE", "GET");
+        options.AddDefaultPolicy(
+              builder =>
+              {
+                builder.AllowAnyOrigin();
+                builder.AllowAnyHeader();
+                builder.AllowAnyMethod();
               });
       });
 
       services.AddControllers();
       services.AddDbContext<AnimalShelterContext>(opt =>
-                opt.UseMySql(Startup.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
-      services.AddRazorPages();
+                opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
+      services.AddControllers();
       services.AddSwaggerGen(c =>
         {
           c.SwaggerDoc("v1", new OpenApiInfo { Title = "AnimalShelter", Version = "v1" });
@@ -71,11 +68,9 @@ namespace AnimalShelter
       app.UseCors();
       app.UseAuthorization();
       app.UseEndpoints(endpoints =>
-        {
-          endpoints.MapControllers();
-          endpoints.MapRazorPages();
-        });
-      }
+      {
+        endpoints.MapControllers();
+      });
     }
   }
 }
