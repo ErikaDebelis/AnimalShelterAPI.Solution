@@ -52,5 +52,14 @@ namespace AnimalShelter.Controllers
       }
       return thisSmallAnimal;
     }
+    
+    [HttpPost]
+    public async Task<ActionResult<SmallAnimal>> Post(SmallAnimal thisSmallAnimal)
+    {
+      _db.SmallAnimals.Add(thisSmallAnimal);
+      await _db.SaveChangesAsync();
+
+      return CreatedAtAction(nameof(GetSmallAnimal), new { id = thisSmallAnimal.SmallAnimalId }, thisSmallAnimal);
+    }
   }
 }
