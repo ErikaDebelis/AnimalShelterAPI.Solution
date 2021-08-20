@@ -23,14 +23,14 @@ An API that catalogs cats :cat:, dogs :dog:, and other small animals :rabbit: :h
 
 2. Open git BASH terminal and navigate to the AnimalShelter folder within the directory
 
-3. Create appsettings.json file in the Factory directory of AnimalShelter.Solution and add the following code to the file: 
+3. Create appsettings.json file in the Factory directory of AnimalShelter.Solution and add the following code to the file:
     ``touch appsettings.json``
 
 ```
 {
-  "Logging": 
+  "Logging":
   {
-    "LogLevel": 
+    "LogLevel":
     {
       "Default": "Warning",
       "System": "Information",
@@ -61,12 +61,19 @@ Be sure to remove the ``{YOUR_USERNAME_NAME}`` and ``{YOUR_PASSWORD}`` and fill 
 8. Run "dotnet run" in the git BASH terminal to  minify the code, and run the project in the terminal.
     ``$ dotnet watch run``
 
-9. View the API by downloading Postman and entering localhost:5000/api/cats or localhost:5000/api/dogs as a GET!
+9. View the API by downloading Postman and entering http://localhost:5000/api/cats or http://localhost:5000/api/dogs as a GET!
 
-######_examples of a request URL query string:_ 
+###### _examples of a request URL query string:_
 * _``https://localhost:5001/api/Cats?name=Kimmy``_
 * _``https://localhost:5001/api/Dogs?name=Muffin``_
 * _``https://localhost:5001/api/SmallAnimals?name=Bacon``_
+
+#### Documentation utilized for further explorations of CORS and Pagination:
+* _``https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-5.0``_ (CORS)
+* _``https://www.c-sharpcorner.com/article/how-to-do-paging-with-asp-net-web-api/``_ (pagination)
+* _``https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet``_ (pagination)
+* _``https://stackoverflow.com/questions/41246614/entity-framework-core-add-unique-constraint-code-first/41257827``_ (creating unique constraints to avoid duplicate animals)
+
 
 ## Bugs
 
