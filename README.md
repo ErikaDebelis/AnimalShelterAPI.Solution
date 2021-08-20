@@ -68,11 +68,13 @@ Be sure to remove the ``{YOUR_USERNAME_NAME}`` and ``{YOUR_PASSWORD}`` and fill 
 ##### API Endpoints
 * HTTP Request URL: ``http://localhost:5000``
 * General request structure:
-```GET /api/Cats
+``` 
+GET /api/Cats
 POST /api/Cats
 GET /api/Cats/{id}
 PUT /api/Cats/{id}
-DELETE /api/Cats/{id}```
+DELETE /api/Cats/{id} 
+```
 
 _substitute Cats with Dogs or SmallAnimals depending on the intended query results_
 
@@ -83,11 +85,12 @@ _substitute Cats with Dogs or SmallAnimals depending on the intended query resul
 
 
 ##### Documentation utilized for further explorations:
+* _``https://www.infoworld.com/article/3327562/how-to-enable-cors-in-aspnet-core.html``_ (CORS)
 * _``https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-5.0``_ (CORS)
 * _``https://www.c-sharpcorner.com/article/how-to-do-paging-with-asp-net-web-api/``_ (pagination)
 * _``https://jasonwatmore.com/post/2018/10/17/c-pure-pagination-logic-in-c-aspnet``_ (pagination)
 * _``https://stackoverflow.com/questions/41246614/entity-framework-core-add-unique-constraint-code-first/41257827``_ (creating unique constraints to avoid duplicate animals)
-
+* _``https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0&viewFallbackFrom=aspnetcore-50``_ (Swagger)
 
 ## Bugs
 

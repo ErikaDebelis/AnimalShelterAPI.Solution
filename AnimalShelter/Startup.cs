@@ -29,10 +29,10 @@ namespace AnimalShelter
     {
       services.AddCors(options =>
       {
-        options.AddDefaultPolicy(
+        options.AddPolicy("AllowSpecificOrigin",
               builder =>
               {
-                builder.AllowAnyOrigin();
+                builder.WithOrigins("http://localhost:5000", "https://localhost:50001");
                 builder.AllowAnyHeader();
                 builder.AllowAnyMethod();
               });
